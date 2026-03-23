@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node --env-file=.env.prod ./src/index.js",
-    "dev": "node --env-file=.env.dev --watch ./src/index.js",
+    "dev": "node --env-file=.env --watch ./src/index.js",
     "seed": "node --env-file=.env.dev ./src/seed.js",
     "lint": "npx eslint ./src",
     "test": "vitest run"

@@ -46,6 +46,17 @@ documentation/ # API, architecture, testing docs
 
 ## 📸 Screenshots
 
+### Home
+![Home](documentation/screenshots/home.png)
+
+### Tables & Reservation
+![Tables](documentation/screenshots/tables.png)
+
+### Admin Dashboard
+![Admin](documentation/screenshots/admin.png)
+
+### My Reservations
+![Reservations](documentation/screenshots/reservations.png)
 
 ---
 
