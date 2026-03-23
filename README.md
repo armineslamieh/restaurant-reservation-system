@@ -1,64 +1,101 @@
-# Credentials & Environment Configuration
+# Restaurant Reservation System
 
-## Default Admin Account
-
-If `ADMIN_EMAIL` and `ADMIN_PASSWORD` are not defined in `server/.env`, the backend automatically creates a default admin user.
-
-Email: admin@example.com  
-Password: admin123
-
-This account can be used to access all admin functionality in the application.
+A full-stack restaurant reservation web application built with Svelte and Node.js.  
+Users can browse available tables, make reservations, and manage bookings, while admins can manage tables, users, and reservations.
 
 ---
 
-## Server Environment Variables
+## 🚀 Features
 
-Create a file `server/.env` based on `server/.env.example`.
-
-Supported variables:
-
-PORT  
-Port on which the backend server runs (default: 3000)
-
-JWT_SECRET  
-Secret key used to sign JSON Web Tokens
-
-JWT_EXPIRES  
-Token expiration time (example: 1d)
-
-ADMIN_EMAIL  
-Email for the default admin user
-
-ADMIN_PASSWORD  
-Password for the default admin user
-
-CORS_ORIGINS  
-Allowed frontend origins (example: http://localhost:5173)
+- User registration and login  
+- JWT authentication  
+- Role-based authorization (user/admin)  
+- Browse and reserve tables  
+- Manage personal reservations  
+- Admin dashboard (users, tables, reservations, timeslots)  
+- REST API with Swagger documentation  
+- Automated backend testing  
 
 ---
 
-## Client Environment Variables
+## 🛠 Tech Stack
 
-Create a file `client/.env`.
+### Frontend
+- Svelte  
+- Vite  
+- Tailwind CSS  
 
-Required variable:
+### Backend
+- Node.js  
+- Express  
+- Sequelize  
+- SQLite  
+- JWT Authentication  
 
-VITE_API_BASE  
-Base URL of the backend API
+---
+
+## 📁 Project Structure
+
+
+client/ # Frontend (Svelte)
+server/ # Backend (Express API)
+documentation/ # API, architecture, testing docs
+
+
+---
+
+## 📸 Screenshots
+
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the repository
+git clone https://github.com/armineslamieh/restaurant-reservation-system.git
+cd restaurant-reservation-system
+
+2. Setup backend
+Create a .env file in server/ based on .env.example.
 
 Example:
-VITE_API_BASE=http://localhost:3000
+PORT=3000
+JWT_SECRET=your_secret_here
+JWT_EXPIRES=1d
+ADMIN_EMAIL=admin@local.dev
+ADMIN_PASSWORD=change_me
+CORS_ORIGINS=http://localhost:5173
 
----
 
-## How to Run
+3. Run backend
+cd server
+npm install
+npm run dev
 
-Backend:
-cd server  
-npm install  
-npm start
 
-Frontend:
-cd client  
-npm install  
-npm run dev  
+4. Run frontend
+cd client
+npm install
+npm run dev
+
+
+📚 API Documentation
+Available at:
+http://localhost:3000/docs
+
+🧪 Testing
+cd server
+npm test
+📈 What I Learned
+Building a full-stack application with separate frontend and backend
+Designing RESTful APIs
+Implementing authentication and authorization (JWT)
+Managing relational data using Sequelize
+Writing automated backend tests
+
+
+🔮 Future Improvements
+Deploy application online
+Add email confirmations
+Improve UI/UX
+Add analytics dashboard
